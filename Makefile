@@ -5,9 +5,12 @@
 ## Compil Programm
 ##
 
-SRC	=	./src/main.c\				\
+SRC	=	./src/main.c\
 		./src/init.c\
 		./src/quizz.c\
+		./src/destroy.c\
+		./src/draw.c\
+		./src/events.c\
 
 
 OBJ	=	$(SRC:.c=.o)

@@ -22,7 +22,7 @@ int main(int argc, char **argv)
     game_t *game = create_game(1920, 1080, "JAM_QUIZZ");
     if (argc > 2)
         return 84;
-    process_menu(game);
+    process_game(game);
     destroy_game(game);
     return 0;
 }
