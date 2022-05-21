@@ -12,12 +12,11 @@ void is_button_1(game_t *game)
     int x = sfMouse_getPositionRenderWindow(game->window).x;
     int y = sfMouse_getPositionRenderWindow(game->window).y;
 
-    if (sfMouse_isButtonPressed) {
-        if (x >= game->obj[1]->pose.x && x <= game->obj[1]->pose.x + 230) {
-            if (y >= game->obj[1]->pose.y && y <= game->obj[1]->pose.y + 230) {
-                // sfSprite_setPosition(game->obj[4]->sprite, game->obj[4]->pose);
-                // sfRenderWindow_drawSprite(game->window, game->obj[4]->sprite, NULL);
-            }
+    if (x >= game->obj[12]->pose.x && x <= game->obj[12]->pose.x + 256) {
+        if (y >= game->obj[12]->pose.y && y <= game->obj[12]->pose.y + 65) {
+                game->note += 1;
+                game->question -= 1;
+                printf("note = %d\n", game->note);
         }
     }
 }

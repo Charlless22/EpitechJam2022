@@ -23,6 +23,7 @@ int main(int argc, char **argv)
     if (argc > 2)
         return 84;
     game->question = 10;
+    game->note = 0;
     process_menu(game);
     destroy_game(game);
     return 0;
