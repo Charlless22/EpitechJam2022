@@ -79,4 +79,5 @@ void eighth_question(game_t *game);
 void ninth_question(game_t *game);
 void tenth_question(game_t *game);
 void process_settings(game_t *game);
+void click_button_music(game_t *game);
 #endif

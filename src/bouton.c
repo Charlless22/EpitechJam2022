@@ -31,11 +31,19 @@ void bouton_play_crunch(game_t *game)
             sfRenderWindow_drawSprite(game->window, game->obj[6]->sprite, NULL);
         }
     }
-    if (x >= game->obj[9]->pose.x && x <= game->obj[9]->pose.x + 92) {
-        if (y >= game->obj[9]->pose.y && y <= game->obj[9]->pose.y + 90) {
-            sfMusic_stop(game->music);
-            sfMusic_play(game->music2);
-            sfMusic_setLoop(game->music2, sfTrue);
-    }
 }
+
+void click_button_music(game_t *game)
+{
+    int x = sfMouse_getPositionRenderWindow(game->window).x;
+    int y = sfMouse_getPositionRenderWindow(game->window).y;
+
+    if (sfMouse_isButtonPressed)
+        if (x >= game->obj[9]->pose.x && x <= game->obj[9]->pose.x + 92) {
+            if (y >= game->obj[9]->pose.y && y <= game->obj[9]->pose.y + 90) {
+                sfMusic_stop(game->music);
+                sfMusic_play(game->music2);
+                sfMusic_setLoop(game->music2, sfTrue);
+            }
+        }
 }
