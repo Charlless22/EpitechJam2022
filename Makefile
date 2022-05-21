@@ -7,7 +7,6 @@
 
 SRC	=	$(wildcard src/*.c)
 
-
 OBJ	=	$(SRC:.c=.o)
 
 NAME	=	jam_quizz
