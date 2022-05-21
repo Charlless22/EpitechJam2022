@@ -11,15 +11,13 @@ void quizz(game_t *game)
 {
     if (game->question == 10) {
         first_question(game);
-        if (game->event.type == sfEvtMouseButtonPressed
-        && game->event.key.code == sfMouseLeft)
-            is_button_1(game);
+        is_button_1(game);
+        return;
     }
     if (game->question == 9) {
         second_question(game);
-        if (game->event.type == sfEvtMouseButtonPressed
-        && game->event.key.code == sfMouseLeft)
-            is_button_2(game);
+        is_button_2(game);
+        return;
     }
     if (game->question == 8) {
         third_question(game);
@@ -69,17 +67,18 @@ void quizz(game_t *game)
         && game->event.key.code == sfMouseLeft)
             is_button_10(game);
     }
+    return;
 }
 
 void process_game(game_t *game)
 {
     game->obj[7] = create_object((sfIntRect) {0, 0, 1920, 1080},"assets/game.png", 0, 0);
-    game->obj[11] = create_object((sfIntRect) {0, 0, 256, 65}, "assets/ElectricButton.png", 320, 335);
-    game->obj[12] = create_object((sfIntRect) {0, 0, 256, 65}, "assets/ElectricButton.png", 770, 335);
-    game->obj[13] = create_object((sfIntRect) {0, 0, 256, 65}, "assets/ElectricButton.png", 1260, 335);
-    sfSprite_setScale(game->obj[11]->sprite, (sfVector2f) {1.1, 1.3});
-    sfSprite_setScale(game->obj[12]->sprite, (sfVector2f) {1.1, 1.3});
-    sfSprite_setScale(game->obj[13]->sprite, (sfVector2f) {1.1, 1.3});
+    game->obj[11] = create_object((sfIntRect) {0, 0, 801, 322}, "assets/boutons.png", 320, 335);
+    game->obj[12] = create_object((sfIntRect) {0, 0, 801, 322}, "assets/boutons.png", 770, 335);
+    game->obj[13] = create_object((sfIntRect) {0, 0, 801, 322}, "assets/boutons.png", 1260, 335);
+    sfSprite_setScale(game->obj[11]->sprite, (sfVector2f) {0.3, 0.3});
+    sfSprite_setScale(game->obj[12]->sprite, (sfVector2f) {0.3, 0.3});
+    sfSprite_setScale(game->obj[13]->sprite, (sfVector2f) {0.3, 0.3});
     while (sfRenderWindow_isOpen(game->window)) {
         while (sfRenderWindow_pollEvent(game->window, &game->event)) {
                 game_events(game);
