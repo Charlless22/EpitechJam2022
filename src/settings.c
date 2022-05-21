@@ -9,17 +9,15 @@
 
 void process_settings(game_t *game)
 {
-    game->obj[8] = create_object((sfIntRect) {0, 0, 1920, 1080},"assets/torreto.jpeg", 0, 0);
     while (sfRenderWindow_isOpen(game->window)) {
-        while (sfRenderWindow_pollEvent(game->window, &game->event)) {
-                game_events(game);
-        }
-        draw_object(game, 8);
         draw_object(game, 9);
+        button_musique(game);
+        while (sfRenderWindow_pollEvent(game->window, &game->event)) {
+                settings_events(game);
+        }
         sfRenderWindow_display(game->window);
         sfRenderWindow_clear(game->window, sfBlack);
     }
-    destroy_object(game, 8);
     destroy_object(game, 9);
     return;
 }

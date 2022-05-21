@@ -49,6 +49,7 @@ typedef struct game_s {
     char *str;
     int question;
     int rep;
+    int musique;
 } game_t;
 
 object_t *create_object(sfIntRect rect, char *path, int x, int y);
@@ -59,7 +60,7 @@ void draw_object(game_t *game, int x);
 void draw_all_object(game_t *game, int x);
 void destroy_object(game_t *game, int x);
 void destroy_all(game_t *game, int x);
-void game_events(game_t *game);
+void settings_events(game_t *game);
 void init_game(game_t *game);
 void music_system(game_t *game);
 void bouton_play_crunch(game_t *game);
@@ -67,6 +68,7 @@ void text(game_t *game);
 void is_button(game_t *game);
 void process_game(game_t *game);
 void menu_events(game_t *game);
+void game_events(game_t *game);
 void move_sprite(game_t *game, int a, int x, int y);
 void first_question(game_t *game);
 void second_question(game_t *game);
@@ -80,4 +82,5 @@ void ninth_question(game_t *game);
 void tenth_question(game_t *game);
 void process_settings(game_t *game);
 void click_button_music(game_t *game);
+void button_musique(game_t *game);
 #endif

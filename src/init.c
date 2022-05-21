@@ -26,6 +26,7 @@ void init_game(game_t *game)
     game->obj[6] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_quit.png", 1500, 400);
     sfSprite_setScale(game->obj[6]->sprite, scale);
     game->obj[9] = create_object((sfIntRect) {0, 0, 92, 90},"assets/music_button.png", 0, 0);
+    game->obj[10] = create_object((sfIntRect) {0, 0, 92, 90},"assets/pause_musique.png", 0, 0);
 }
 
 object_t *create_object(sfIntRect rect, char *path, int x, int y)
@@ -49,4 +50,5 @@ void create_sound(game_t *game, char *son)
     game->sound = sfSound_create();
     sfSound_setBuffer(game->sound, game->buffer);
     sfSound_play(game->sound);
+    game->musique = 0;
 }
