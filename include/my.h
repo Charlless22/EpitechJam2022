@@ -46,6 +46,8 @@ typedef struct game_s {
     sfFont *font;
     sfVector2f position;
     char *str;
+    int question;
+    int rep;
 } game_t;
 
 object_t *create_object(sfIntRect rect, char *path, int x, int y);
