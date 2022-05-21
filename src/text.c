@@ -31,7 +31,7 @@ void first_question(game_t *game)
     sfText_setString(game->text, game->str);
     sfText_setFont(game->text, game->font);
     sfText_setColor(game->text, sfYellow);
-    game->position.x = 720;
+    game->position.x = 100;
     game->position.y = 0;
     sfText_setPosition(game->text, game->position);
     sfRenderWindow_drawText(game->window, game->text, NULL);
