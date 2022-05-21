@@ -34,7 +34,7 @@ typedef struct game_s {
     sfClock *clock;
     sfTime time;
     sfVector2f pose;
-    sfMusic *musique;
+    sfMusic *music;
     sfSoundBuffer *buffer;
     sfSound *sound;
     float seconds;
@@ -50,4 +50,5 @@ void draw_all_object(game_t *game, int x);
 void destroy_object(game_t *game, int x);
 void destroy_all(game_t *game, int x);
 void game_events(game_t *game);
+void music_system(game_t *game);
 #endif

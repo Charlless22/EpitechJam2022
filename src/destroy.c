@@ -9,7 +9,7 @@
 
 void destroy_game(game_t *game)
 {
-    sfMusic_destroy(game->musique);
+    sfMusic_destroy(game->music);
     sfClock_destroy(game->clock);
     sfRenderWindow_destroy(game->window);
 }
