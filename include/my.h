@@ -42,6 +42,7 @@ typedef struct game_s {
     sfText *text;
     sfFont *font;
     sfVector2f position;
+    char *str;
 } game_t;
 
 object_t *create_object(sfIntRect rect, char *path, int x, int y);
@@ -55,4 +56,5 @@ void destroy_all(game_t *game, int x);
 void game_events(game_t *game);
 void init_game(game_t *game);
 void music_system(game_t *game);
+void text(game_t *game);
 #endif
