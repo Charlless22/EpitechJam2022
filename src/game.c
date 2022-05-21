@@ -17,7 +17,9 @@ void quizz(game_t *game)
     }
     if (game->question == 9) {
         second_question(game);
-        //is_button_2(game);
+        if (game->event.type == sfEvtMouseButtonPressed
+        && game->event.key.code == sfMouseLeft)
+            is_button_2(game);
     }
     if (game->question == 8) {
         third_question(game);

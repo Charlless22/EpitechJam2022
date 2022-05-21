@@ -39,14 +39,14 @@ void first_question(game_t *game)
 
 void second_question(game_t *game)
 {
-    game->str = "Comment se nomme le farceur de la famille Simpson ?";
+    game->str = "Comment se nomme le farceur de la famille Simpson ?\n\n\n\n\t\tKenny\t\t\tJawad\t\t\t\tBart";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
     sfText_setString(game->text, game->str);
     sfText_setFont(game->text, game->font);
-    sfText_setColor(game->text, sfYellow);
-    game->position.x = 720;
+    sfText_setColor(game->text, sfBlack);
+    game->position.x = 200;
     game->position.y = 0;
     sfText_setPosition(game->text, game->position);
     sfRenderWindow_drawText(game->window, game->text, NULL);
