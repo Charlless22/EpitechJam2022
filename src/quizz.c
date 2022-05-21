@@ -11,11 +11,11 @@ void process_menu(game_t *game)
 {
     init_game(game);
     while (sfRenderWindow_isOpen(game->window)) {
+        draw_all_object(game, 3);
+        bouton_play_crunch(game);
         while (sfRenderWindow_pollEvent(game->window, &game->event)) {
                 menu_events(game);
         }
-        draw_all_object(game, 3);
-        bouton_play_crunch(game);
         text(game);
         sfRenderWindow_display(game->window);
         sfRenderWindow_clear(game->window, sfBlack);
