@@ -7,7 +7,7 @@
 
 #ifndef MY_H
     #define MY_H
-    #define OBJECT 10
+    #define OBJECT 100
     #include <SFML/Graphics.h>
     #include <SFML/Audio.h>
     #include <SFML/Window.h>
