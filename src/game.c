@@ -9,56 +9,65 @@
 
 void quizz(game_t *game)
 {
-    if (game->question = 10) {
+    if (game->question == 10) {
         first_question(game);
-        is_button_1(game);
+        //is_button_1(game);
     }
-    if (game->question = 9) {
+    if (game->question == 9) {
         second_question(game);
-        is_button_2(game);
+        //is_button_2(game);
     }
-    if (game->question = 8) {
+    if (game->question == 8) {
         third_question(game);
-        is_button_3(game);
+        //is_button_3(game);
     }
-    if (game->question = 7) {
+    if (game->question == 7) {
         fourth_question(game);
-        is_button_4(game);
+        //is_button_4(game);
     }
-    if (game->question = 6) {
+    if (game->question == 6) {
         fifth_question(game);
-        is_button_5(game);
+        //is_button_5(game);
     }
-    if (game->question = 5) {
+    if (game->question == 5) {
         sixth_question(game);
-        is_button_6(game);
+        //is_button_6(game);
     }
-    if (game->question = 4) {
+    if (game->question == 4) {
         seventh_question(game);
-        is_button_7(game);
+        //is_button_7(game);
     }
-    if (game->question = 3) {
+    if (game->question == 3) {
         eighth_question(game);
-        is_button_8(game);
+        //is_button_8(game);
     }
-    if (game->question = 2) {
+    if (game->question == 2) {
         ninth_question(game);
-        is_button_9(game);
+        //is_button_9(game);
     }
-    if (game->question = 1) {
+    if (game->question == 1) {
         tenth_question(game);
-        is_button_10(game);
+        //is_button_10(game);
     }
 }
 
 void process_game(game_t *game)
 {
     game->obj[7] = create_object((sfIntRect) {0, 0, 1920, 1080},"assets/game.png", 0, 0);
+    game->obj[11] = create_object((sfIntRect) {0, 0, 256, 65}, "assets/ElectricButton.png", 320, 335);
+    game->obj[12] = create_object((sfIntRect) {0, 0, 256, 65}, "assets/ElectricButton.png", 770, 335);
+    game->obj[13] = create_object((sfIntRect) {0, 0, 256, 65}, "assets/ElectricButton.png", 1260, 335);
+    sfSprite_setScale(game->obj[11]->sprite, (sfVector2f) {1.1, 1.3});
+    sfSprite_setScale(game->obj[12]->sprite, (sfVector2f) {1.1, 1.3});
+    sfSprite_setScale(game->obj[13]->sprite, (sfVector2f) {1.1, 1.3});
     while (sfRenderWindow_isOpen(game->window)) {
         while (sfRenderWindow_pollEvent(game->window, &game->event)) {
                 game_events(game);
         }
         draw_object(game, 7);
+        draw_object(game, 11);
+        draw_object(game, 12);
+        draw_object(game, 13);
         quizz(game);
         sfRenderWindow_display(game->window);
         sfRenderWindow_clear(game->window, sfBlack);
