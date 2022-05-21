@@ -84,4 +84,14 @@ void tenth_question(game_t *game);
 void process_settings(game_t *game);
 void click_button_music(game_t *game);
 void button_musique(game_t *game);
+void is_button_1(game_t *game);
+void is_button_2(game_t *game);
+void is_button_3(game_t *game);
+void is_button_4(game_t *game);
+void is_button_5(game_t *game);
+void is_button_6(game_t *game);
+void is_button_7(game_t *game);
+void is_button_8(game_t *game);
+void is_button_9(game_t *game);
+void is_button_10(game_t *game);
 #endif

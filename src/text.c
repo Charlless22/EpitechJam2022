@@ -30,7 +30,7 @@ void first_question(game_t *game)
     sfText_setCharacterSize(game->text, 75);
     sfText_setString(game->text, game->str);
     sfText_setFont(game->text, game->font);
-    sfText_setColor(game->text, sfYellow);
+    sfText_setColor(game->text, sfBlack);
     game->position.x = 200;
     game->position.y = 0;
     sfText_setPosition(game->text, game->position);
