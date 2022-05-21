@@ -15,9 +15,11 @@ void process_settings(game_t *game)
                 game_events(game);
         }
         draw_object(game, 8);
+        draw_object(game, 9);
         sfRenderWindow_display(game->window);
         sfRenderWindow_clear(game->window, sfBlack);
     }
     destroy_object(game, 8);
+    destroy_object(game, 9);
     return;
 }
