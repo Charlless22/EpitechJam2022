@@ -54,14 +54,14 @@ void second_question(game_t *game)
 
 void third_question(game_t *game)
 {
-    game->str = "Comment se nomme le pere de la famille Simpson ?";
+    game->str = "Comment se nomme le pere de la famille Simpson ?\n\n\n\n\t\tSamuel\t\t\tPapacito\t\t\tHomer";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
     sfText_setString(game->text, game->str);
     sfText_setFont(game->text, game->font);
     sfText_setColor(game->text, sfYellow);
-    game->position.x = 720;
+    game->position.x = 200;
     game->position.y = 0;
     sfText_setPosition(game->text, game->position);
     sfRenderWindow_drawText(game->window, game->text, NULL);
@@ -69,14 +69,14 @@ void third_question(game_t *game)
 
 void fourth_question(game_t *game)
 {
-    game->str = "Comment se nomme la mere de la famille Simpson ?";
+    game->str = "Comment se nomme la mere de la famille Simpson ?\n\n\n\n\t\tMarge\t\t\tFatima\t\t\tNasdas";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
     sfText_setString(game->text, game->str);
     sfText_setFont(game->text, game->font);
     sfText_setColor(game->text, sfYellow);
-    game->position.x = 720;
+    game->position.x = 200;
     game->position.y = 0;
     sfText_setPosition(game->text, game->position);
     sfRenderWindow_drawText(game->window, game->text, NULL);
@@ -84,14 +84,14 @@ void fourth_question(game_t *game)
 
 void fifth_question(game_t *game)
 {
-    game->str = "Comment se nomme le bebe de la famille Simpson ?";
+    game->str = "Comment se nomme le bebe de la famille Simpson ?\n\n\n\n\t\tMaggy\t\t\tEricLeZ\t\t\tIshowSpeed";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
     sfText_setString(game->text, game->str);
     sfText_setFont(game->text, game->font);
     sfText_setColor(game->text, sfYellow);
-    game->position.x = 720;
+    game->position.x = 200;
     game->position.y = 0;
     sfText_setPosition(game->text, game->position);
     sfRenderWindow_drawText(game->window, game->text, NULL);
