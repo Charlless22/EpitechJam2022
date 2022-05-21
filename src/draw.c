@@ -22,5 +22,5 @@ void draw_all_object(game_t *game, int x)
 
 void move_sprite(game_t *game, int a, int x, int y)
 {
-    sfSprite_move(game->obj[a]->sprite, (sfVector2f){x, y});
+    sfSprite_setPosition(game->obj[a]->sprite, game->obj[a]->pose);
 }

@@ -65,4 +65,15 @@ void is_button(game_t *game);
 void process_game(game_t *game);
 void menu_events(game_t *game);
 void move_sprite(game_t *game, int a, int x, int y);
+void first_question(game_t *game);
+void second_question(game_t *game);
+void third_question(game_t *game);
+void fourth_question(game_t *game);
+void fifth_question(game_t *game);
+void sixth_question(game_t *game);
+void seventh_question(game_t *game);
+void eighth_question(game_t *game);
+void ninth_question(game_t *game);
+void tenth_question(game_t *game);
+void process_settings(game_t *game);
 #endif
