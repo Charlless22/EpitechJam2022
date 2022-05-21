@@ -50,6 +50,7 @@ typedef struct game_s {
     int question;
     int rep;
     int musique;
+    int score;
 } game_t;
 
 object_t *create_object(sfIntRect rect, char *path, int x, int y);
