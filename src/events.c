@@ -7,7 +7,7 @@
 
 #include "../include/my.h"
 
-void events(game_t *game)
+void game_events(game_t *game)
 {
     if (game->event.type == sfEvtClosed)
         sfRenderWindow_close(game->window);

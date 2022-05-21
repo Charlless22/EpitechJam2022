@@ -49,5 +49,5 @@ void draw_object(game_t *game, int x);
 void draw_all_object(game_t *game, int x);
 void destroy_object(game_t *game, int x);
 void destroy_all(game_t *game, int x);
-void events(game_t *game);
+void game_events(game_t *game);
 #endif
