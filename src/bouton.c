@@ -6,8 +6,4 @@
 */
 
 #include "../include/my.h"
-
-void bouton_play(game_t *game)
-{
     
-}

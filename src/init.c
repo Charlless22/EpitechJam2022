@@ -20,6 +20,13 @@ void init_game(game_t *game)
     sfSprite_setScale(game->obj[2]->sprite, scale);
     game->obj[3] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_quit.png", 250, 700);
     sfSprite_setScale(game->obj[3]->sprite, scale);
+    game->obj[4] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_play_crunch.png", 250, 100);
+    sfSprite_setScale(game->obj[4]->sprite, scale);
+    game->obj[5] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_quit_crunch.png", 250, 400);
+    sfSprite_setScale(game->obj[5]->sprite, scale);
+    game->obj[6] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_quit_crunch.png", 250, 700);
+    sfSprite_setScale(game->obj[6]->sprite, scale);
+    bouton_play_crunch(game);
 }
 
 object_t *create_object(sfIntRect rect, char *path, int x, int y)

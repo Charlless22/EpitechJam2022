@@ -10,7 +10,7 @@
 void text(game_t *game)
 {
     game->str = "EPITECH JAM 2022";
-    game->font = sfFont_createFromFile("./include/homer.ttf");
+    game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
     sfText_setString(game->text, game->str);
