@@ -14,4 +14,7 @@ void game_events(game_t *game)
     if (game->event.type == sfEvtKeyPressed
     && game->event.key.code == sfKeyEscape)
         sfRenderWindow_close(game->window);
+    if (game->event.type == sfEvtMouseButtonPressed
+    && game->event.key.code == sfMouseLeft)
+        is_button(game);
 }

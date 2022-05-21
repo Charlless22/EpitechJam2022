@@ -58,4 +58,5 @@ void init_game(game_t *game);
 void music_system(game_t *game);
 void bouton_play_crunch(game_t *game);
 void text(game_t *game);
+void is_button(game_t *game);
 #endif
