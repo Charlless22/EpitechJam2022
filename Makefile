@@ -15,7 +15,7 @@ SRC	=	./src/main.c\
 
 OBJ	=	$(SRC:.c=.o)
 
-NAME	=	JAM_QUIZZ
+NAME	=	jam_quizz
 
 FLAGS	=	-Wall -Wextra -g3 -lcsfml-system -lcsfml-window -lcsfml-graphics -lcsfml-audio
 
