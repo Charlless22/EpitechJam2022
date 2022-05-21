@@ -9,6 +9,7 @@
 
 void init_game(game_t *game)
 {
+    game->score = 0;
     sfVector2f scale = {0.5, 0.5};
     sfVector2f scale2 = {0.3, 0.3};
     music_system(game);
