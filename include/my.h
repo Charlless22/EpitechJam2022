@@ -38,6 +38,7 @@ typedef struct game_s {
     sfTime time;
     sfVector2f pose;
     sfMusic *music;
+    sfMusic *music2;
     sfSoundBuffer *buffer;
     sfSound *sound;
     float seconds;

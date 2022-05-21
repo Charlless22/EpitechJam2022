@@ -12,6 +12,7 @@ void process_menu(game_t *game)
     init_game(game);
     while (sfRenderWindow_isOpen(game->window)) {
         draw_all_object(game, 3);
+        draw_object(game, 9);
         bouton_play_crunch(game);
         while (sfRenderWindow_pollEvent(game->window, &game->event)) {
                 menu_events(game);
@@ -21,5 +22,6 @@ void process_menu(game_t *game)
         sfRenderWindow_clear(game->window, sfBlack);
     }
     destroy_all(game, 3);
+    destroy_object(game, 9);
     return;
 }

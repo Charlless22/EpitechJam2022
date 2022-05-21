@@ -25,6 +25,7 @@ void init_game(game_t *game)
     sfSprite_setScale(game->obj[5]->sprite, scale2);
     game->obj[6] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_quit.png", 1500, 400);
     sfSprite_setScale(game->obj[6]->sprite, scale);
+    game->obj[9] = create_object((sfIntRect) {0, 0, 92, 90},"assets/music_button.png", 0, 0);
 }
 
 object_t *create_object(sfIntRect rect, char *path, int x, int y)
