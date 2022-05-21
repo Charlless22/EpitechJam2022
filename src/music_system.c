@@ -10,6 +10,8 @@
 void music_system(game_t *game)
 {
     game->music = sfMusic_createFromFile("assets/simpson.ogg");
+    game->music2 = sfMusic_createFromFile("assets/music2.ogg");
+
     if (game->music) {
         sfMusic_play(game->music);
         sfMusic_setLoop(game->music, sfTrue);
