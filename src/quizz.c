@@ -15,6 +15,7 @@ void process_game(game_t *game)
                 game_events(game);
         }
         draw_all_object(game, 3);
+        text(game);
         sfRenderWindow_display(game->window);
         sfRenderWindow_clear(game->window, sfBlack);
     }

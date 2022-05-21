@@ -7,7 +7,7 @@
 
 #include "../include/my.h"
 
-void bouton(game_t *game)
+void bouton_play(game_t *game)
 {
     
 }
