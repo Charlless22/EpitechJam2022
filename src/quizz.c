@@ -15,6 +15,7 @@ void process_menu(game_t *game)
                 game_events(game);
         }
         draw_all_object(game, 3);
+        bouton_play_crunch(game);
         text(game);
         sfRenderWindow_display(game->window);
         sfRenderWindow_clear(game->window, sfBlack);

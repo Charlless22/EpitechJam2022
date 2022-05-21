@@ -10,21 +10,20 @@
 void init_game(game_t *game)
 {
     sfVector2f scale = {0.5, 0.5};
-    sfVector2f scale2 = {0.3, 0.3};
+    sfVector2f scale2 = {1.3, 1.3};
     music_system(game);
-    game->obj[0] = create_object((sfIntRect) {0, 0, 3840, 2160},"assets/simpson.jpg", 0, 0);
-    sfSprite_setScale(game->obj[0]->sprite, scale);
-    game->obj[1] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_play.png", 250, 100);
+    game->obj[0] = create_object((sfIntRect) {0, 0, 1920, 1080},"assets/s.png", 0, 0);
+    game->obj[1] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_play.png", 1400, 100);
     sfSprite_setScale(game->obj[1]->sprite, scale);
-    game->obj[2] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_settings.png", 250, 400);
+    game->obj[2] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_settings.png", 1400, 400);
     sfSprite_setScale(game->obj[2]->sprite, scale);
-    game->obj[3] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_quit.png", 250, 700);
+    game->obj[3] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_quit.png", 1400, 700);
     sfSprite_setScale(game->obj[3]->sprite, scale);
-    game->obj[4] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_play_crunch.png", 250, 100);
+    game->obj[4] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_play_crunch.png", 1400, 100);
     sfSprite_setScale(game->obj[4]->sprite, scale);
-    game->obj[5] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_quit_crunch.png", 250, 400);
+    game->obj[5] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_quit_crunch.png", 1400, 400);
     sfSprite_setScale(game->obj[5]->sprite, scale);
-    game->obj[6] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_quit_crunch.png", 250, 700);
+    game->obj[6] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_quit_crunch.png", 1400, 700);
     sfSprite_setScale(game->obj[6]->sprite, scale);
 }
 
