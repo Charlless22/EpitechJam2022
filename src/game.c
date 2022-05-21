@@ -9,7 +9,7 @@
 
 void process_game(game_t *game)
 {
-    game->obj[7] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_settings_crunch.png", 1750, 30);
+    game->obj[7] = create_object((sfIntRect) {0, 0, 1920, 1080},"assets/game.png", 0, 0);
     game->obj[8] = create_object((sfIntRect) {0, 0, 512, 512},"assets/Button_quit_crunch.png", 1500, 400);
     while (sfRenderWindow_isOpen(game->window)) {
         while (sfRenderWindow_pollEvent(game->window, &game->event)) {
