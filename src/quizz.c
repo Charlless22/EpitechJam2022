@@ -7,7 +7,7 @@
 
 #include "../include/my.h"
 
-void process_game(game_t *game)
+void process_menu(game_t *game)
 {
     init_game(game);
     while (sfRenderWindow_isOpen(game->window)) {

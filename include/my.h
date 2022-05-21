@@ -47,7 +47,7 @@ typedef struct game_s {
 
 object_t *create_object(sfIntRect rect, char *path, int x, int y);
 void create_sound(game_t *game, char *son);
-void process_game(game_t *game);
+void process_menu(game_t *game);
 void destroy_game(game_t *game);
 void draw_object(game_t *game, int x);
 void draw_all_object(game_t *game, int x);
