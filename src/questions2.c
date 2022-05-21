@@ -42,6 +42,7 @@ void is_button_8(game_t *game)
         if (y >= game->obj[1]->pose.y && y <= game->obj[1]->pose.y + 230) {
             // sfSprite_setPosition(game->obj[4]->sprite, game->obj[4]->pose);
             // sfRenderWindow_drawSprite(game->window, game->obj[4]->sprite, NULL);
+        }
     }
 }
 
