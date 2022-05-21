@@ -99,14 +99,14 @@ void fifth_question(game_t *game)
 
 void sixth_question(game_t *game)
 {
-    game->str = "Quel est le nom de Bart ?";
+    game->str = "Quel est le nom de Bart ?\n\n\n\n\t\tNaruto\t\t\tJhon\t\t\tBartholomew";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
     sfText_setString(game->text, game->str);
     sfText_setFont(game->text, game->font);
     sfText_setColor(game->text, sfYellow);
-    game->position.x = 720;
+    game->position.x = 200;
     game->position.y = 0;
     sfText_setPosition(game->text, game->position);
     sfRenderWindow_drawText(game->window, game->text, NULL);
@@ -114,14 +114,14 @@ void sixth_question(game_t *game)
 
 void seventh_question(game_t *game)
 {
-    game->str = "Quel est le nom complet de Maggie ?";
+    game->str = "Quel est le nom complet de Maggie ?\n\n\n\n\t\tMargaret Eve\t\t\tPablo\t\t\tZizou";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
     sfText_setString(game->text, game->str);
     sfText_setFont(game->text, game->font);
     sfText_setColor(game->text, sfYellow);
-    game->position.x = 720;
+    game->position.x = 200;
     game->position.y = 0;
     sfText_setPosition(game->text, game->position);
     sfRenderWindow_drawText(game->window, game->text, NULL);
@@ -129,14 +129,14 @@ void seventh_question(game_t *game)
 
 void eighth_question(game_t *game)
 {
-    game->str = "Qui est le meilleur ami de Bart ?";
+    game->str = "Qui est le meilleur ami de Bart ?\n\n\n\n\t\tMilhouse\t\t\tToulouse\t\t\tPedro";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
     sfText_setString(game->text, game->str);
     sfText_setFont(game->text, game->font);
     sfText_setColor(game->text, sfYellow);
-    game->position.x = 720;
+    game->position.x = 200;
     game->position.y = 0;
     sfText_setPosition(game->text, game->position);
     sfRenderWindow_drawText(game->window, game->text, NULL);
@@ -144,14 +144,14 @@ void eighth_question(game_t *game)
 
 void ninth_question(game_t *game)
 {
-    game->str = "Ou travaille Homer ?";
+    game->str = "Ou travaille Homer ?\n\n\n\n\t\tcentrale nucléaire de Springfield\t\t\tCentrale nuck de call of duty\t\t\tPole emploi";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
     sfText_setString(game->text, game->str);
     sfText_setFont(game->text, game->font);
     sfText_setColor(game->text, sfYellow);
-    game->position.x = 720;
+    game->position.x = 200;
     game->position.y = 0;
     sfText_setPosition(game->text, game->position);
     sfRenderWindow_drawText(game->window, game->text, NULL);
@@ -159,14 +159,14 @@ void ninth_question(game_t *game)
 
 void tenth_question(game_t *game)
 {
-    game->str = " Marge etait elle flic ?";
+    game->str = " Marge etait elle flic ?\n\n\n\n\t\tOui\t\t\tNon\t\t\tla place";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
     sfText_setString(game->text, game->str);
     sfText_setFont(game->text, game->font);
     sfText_setColor(game->text, sfYellow);
-    game->position.x = 720;
+    game->position.x = 200;
     game->position.y = 0;
     sfText_setPosition(game->text, game->position);
     sfRenderWindow_drawText(game->window, game->text, NULL);
