@@ -38,17 +38,20 @@ void click_button_music(game_t *game)
     int x = sfMouse_getPositionRenderWindow(game->window).x;
     int y = sfMouse_getPositionRenderWindow(game->window).y;
 
-    if (sfMouse_isButtonPressed) {
+    if (sfMouse_isButtonPressed && game->musique == 0) {
         if (x >= game->obj[9]->pose.x && x <= game->obj[9]->pose.x + 92) {
             if (y >= game->obj[9]->pose.y && y <= game->obj[9]->pose.y + 90) {
-                if (game->musique == 0) {
-                    sfMusic_stop(game->music);
-                    game->musique = 1;
-                }
-                if (game->musique == 1) {
-                    sfMusic_play(game->music);
-                    game->musique = 0;
-                }
+                sfMusic_stop(game->music);
+                game->musique = 1;
+            }
+        }
+    }
+    if (sfMouse_isButtonPressed && game->musique == 1) {
+        if (x >= game->obj[9]->pose.x && x <= game->obj[9]->pose.x + 92) {
+            if (y >= game->obj[9]->pose.y && y <= game->obj[9]->pose.y + 90) {
+                sfMusic_stop(game->music);
+                sfMusic_play(game->music2);
+                game->musique = 2;
             }
         }
     }
