@@ -24,7 +24,7 @@ void text(game_t *game)
 
 void first_question(game_t *game)
 {
-    game->str = "Comment se prénomme la fille intello de la famille Simpson ?";
+    game->str = "Comment se prenomme la fille intello de la famille Simpson ?";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
@@ -39,7 +39,7 @@ void first_question(game_t *game)
 
 void second_question(game_t *game)
 {
-    game->str = "Comment se prénomme le farceur de la famille Simpson ?";
+    game->str = "Comment se prenomme le farceur de la famille Simpson ?";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
@@ -54,7 +54,7 @@ void second_question(game_t *game)
 
 void third_question(game_t *game)
 {
-    game->str = "Comment se prénomme le père de la famille Simpson ?";
+    game->str = "Comment se prenomme le pere de la famille Simpson ?";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
@@ -69,7 +69,7 @@ void third_question(game_t *game)
 
 void fourth_question(game_t *game)
 {
-    game->str = "Comment se prénomme la mère de la famille Simpson ?";
+    game->str = "Comment se prenomme la mere de la famille Simpson ?";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
@@ -84,7 +84,7 @@ void fourth_question(game_t *game)
 
 void fifth_question(game_t *game)
 {
-    game->str = "Comment se prénomme le bébé de la famille Simpson ?";
+    game->str = "Comment se prenomme le bebe de la famille Simpson ?";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
@@ -99,7 +99,7 @@ void fifth_question(game_t *game)
 
 void sixth_question(game_t *game)
 {
-    game->str = "Quel est le prénom de Bart ?";
+    game->str = "Quel est le prenom de Bart ?";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
@@ -114,7 +114,7 @@ void sixth_question(game_t *game)
 
 void seventh_question(game_t *game)
 {
-    game->str = "Quel est le prénom complet de Maggie ?";
+    game->str = "Quel est le prenom complet de Maggie ?";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
@@ -144,7 +144,7 @@ void eighth_question(game_t *game)
 
 void ninth_question(game_t *game)
 {
-    game->str = "Où travaille Homer ?";
+    game->str = "Ou travaille Homer ?";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
@@ -159,7 +159,7 @@ void ninth_question(game_t *game)
 
 void tenth_question(game_t *game)
 {
-    game->str = " Marge était elle flic ?";
+    game->str = " Marge etait elle flic ?";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
