@@ -24,7 +24,7 @@ void text(game_t *game)
 
 void first_question(game_t *game)
 {
-    game->str = "Comment se nomme la fille intello de la famille Simpson ?\n\n\n\n\n\t\tApu\t\t\t\tLisa\t\t\t\tMarge";
+    game->str = "Comment se nomme la fille intello de la famille Simpson ?\n\n\n\n\t\tApu\t\t\t\tLisa\t\t\t\tMarge";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
