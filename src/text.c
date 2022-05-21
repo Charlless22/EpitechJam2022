@@ -24,14 +24,14 @@ void text(game_t *game)
 
 void first_question(game_t *game)
 {
-    game->str = "Comment se nomme la fille intello de la famille Simpson ?";
+    game->str = "Comment se nomme la fille intello de la famille Simpson ?\n\n\n\n\n\t\tApu\t\t\t\tLisa\t\t\t\tMarge";
     game->font = sfFont_createFromFile("./assets/homer.ttf");
     game->text = sfText_create();
     sfText_setCharacterSize(game->text, 75);
     sfText_setString(game->text, game->str);
     sfText_setFont(game->text, game->font);
     sfText_setColor(game->text, sfYellow);
-    game->position.x = 100;
+    game->position.x = 200;
     game->position.y = 0;
     sfText_setPosition(game->text, game->position);
     sfRenderWindow_drawText(game->window, game->text, NULL);
