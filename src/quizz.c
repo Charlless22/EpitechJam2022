@@ -12,7 +12,7 @@ void process_menu(game_t *game)
     init_game(game);
     while (sfRenderWindow_isOpen(game->window)) {
         while (sfRenderWindow_pollEvent(game->window, &game->event)) {
-                game_events(game);
+                menu_events(game);
         }
         draw_all_object(game, 3);
         bouton_play_crunch(game);

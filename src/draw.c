@@ -19,3 +19,8 @@ void draw_all_object(game_t *game, int x)
         sfRenderWindow_drawSprite(game->window, game->obj[i]->sprite, NULL);
     }
 }
+
+void move_sprite(game_t *game, int a, int x, int y)
+{
+    sfSprite_move(game->obj[a]->sprite, (sfVector2f){x, y});
+}

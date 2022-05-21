@@ -7,7 +7,7 @@
 
 #ifndef MY_H
     #define MY_H
-    #define OBJECT 7
+    #define OBJECT 10
     #include <SFML/Graphics.h>
     #include <SFML/Audio.h>
     #include <SFML/Window.h>
@@ -62,4 +62,7 @@ void music_system(game_t *game);
 void bouton_play_crunch(game_t *game);
 void text(game_t *game);
 void is_button(game_t *game);
+void process_game(game_t *game);
+void menu_events(game_t *game);
+void move_sprite(game_t *game, int a, int x, int y);
 #endif

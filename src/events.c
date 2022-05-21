@@ -7,7 +7,7 @@
 
 #include "../include/my.h"
 
-void game_events(game_t *game)
+void menu_events(game_t *game)
 {
     if (game->event.type == sfEvtClosed)
         sfRenderWindow_close(game->window);
@@ -17,4 +17,16 @@ void game_events(game_t *game)
     if (game->event.type == sfEvtMouseButtonPressed
     && game->event.key.code == sfMouseLeft)
         is_button(game);
+}
+
+void game_events(game_t *game)
+{
+    if (game->event.type == sfEvtClosed)
+        sfRenderWindow_close(game->window);
+    if (game->event.type == sfEvtKeyPressed
+    && game->event.key.code == sfKeyEscape)
+        sfRenderWindow_close(game->window);
+    // if (game->event.type == sfEvtMouseButtonPressed
+    // && game->event.key.code == sfMouseLeft)
+    //     is_button(game);
 }
