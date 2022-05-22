@@ -171,3 +171,34 @@ void tenth_question(game_t *game)
     sfText_setPosition(game->text, game->position);
     sfRenderWindow_drawText(game->window, game->text, NULL);
 }
+
+void points(game_t *game)
+{
+    game->str = "POINTS : ";
+    game->font = sfFont_createFromFile("./assets/homer.ttf");
+    game->text = sfText_create();
+    sfText_setCharacterSize(game->text, 75);
+    sfText_setString(game->text, game->str);
+    sfText_setFont(game->text, game->font);
+    sfText_setColor(game->text, sfBlack);
+    game->position.x = 200;
+    game->position.y = 0;
+    sfText_setPosition(game->text, game->position);
+    sfRenderWindow_drawText(game->window, game->text, NULL);
+}
+
+void total_points(game_t *game)
+{
+    static int count = 0;
+    game->font = sfFont_createFromFile("include/police2.TTF");
+    game->text = sfText_create();
+    sfText_setCharacterSize(game->text, 55);
+    sfText_setString(game->text, my_itoa(count));
+    sfText_setFont(game->text, game->font);
+    sfText_setColor(game->text, sfBlack);
+    game->position.x = 1020;
+    game->position.y = 0;
+    sfText_setPosition(game->text, game->position);
+    sfRenderWindow_drawText(game->window, game->text, NULL);
+    count++;
+}

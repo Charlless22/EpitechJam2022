@@ -95,4 +95,7 @@ void is_button_7(game_t *game);
 void is_button_8(game_t *game);
 void is_button_9(game_t *game);
 void is_button_10(game_t *game);
+char *my_itoa(int nb);
+void points(game_t *game);
+void total_points(game_t *game);
 #endif
