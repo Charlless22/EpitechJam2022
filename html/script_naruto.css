@@ -44,7 +44,7 @@
   font-size: 18px;
   background: none;
   padding: 10px 5px;
-  border: 1px solid rgba(13, 110, 221, 0.712);
+  border: 1px solid grey;
   outline: none;
   border-radius: 10px;
   cursor: pointer;
@@ -66,7 +66,7 @@
 }
 
 .answer:hover {
-  background: rgba(13, 110, 221, 0.712);
+  background: grey;
   color: white;
   transition: all 200ms ease-out;
 }
@@ -146,7 +146,7 @@
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  background: rgb(13, 110, 221);
+  background: grey;
   padding: 10px 15px;
   min-width: 100px;
   min-height: 45px;
@@ -183,7 +183,12 @@
 
 .reponse:hover
 {
-    background: yellow;
+    background: grey;
     color: black;
         animation: rotateAnim 1s linear infinite;
+}
+
+.naruto {
+  position: relative;
+  left: 650px;
 }

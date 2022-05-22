@@ -15,6 +15,97 @@ body
     background: black;
 }
 
+h1 {
+    position: absolute;
+    left: 800px;
+    top: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+.back
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid red;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.back:hover
+{
+    background: red;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #000;
+    overflow: hidden;
+    height: 100vh;
+}
+
+i
+{
+    position: absolute;
+    height: 200px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: animate 5s linear infinite;
+}
+
+i:nth-child(3n+1)
+{
+    background: linear-gradient(transparent, yellow);
+}
+
+i:nth-child(3n+1)
+{
+    background: linear-gradient(transparent, grey);
+}
+i:nth-child(3n+2)
+{
+    background: linear-gradient(transparent, orange);
+}
+i:nth-child(3n+3)
+{
+    background: linear-gradient(transparent, cyan);
+}
+i:nth-child(3n+3)
+{
+    background: linear-gradient(transparent, violet);
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(-200px);
+    }
+    100%
+    {
+        transform: translateY(calc(100vh + 200px));
+    }
+}
+
 .card1
 {
     position: relative;
@@ -112,7 +203,7 @@ body
 .card2
 {
     position: relative;
-    left: 0px;
+    left: -20px;
     width: 320px;
     height: 420px;
     background: orange;

@@ -187,3 +187,8 @@
     color: black;
         animation: rotateAnim 1s linear infinite;
 }
+
+.homer {
+  position: relative;
+  left: 650px;
+}

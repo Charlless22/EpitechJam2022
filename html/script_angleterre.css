@@ -165,17 +165,16 @@
     left: 0px;
     top: 0px;
     border: 0;
-    background: #FFBB05;
+    background: rgb(19, 154, 227);
     display: block;
     margin: 100px 50px;
     text-align: center;
     font-size: x-large;
     font-weight: bold;
-    border: 5px solid #FFBB05;
     padding: 20px 46px;
     width: 200px;
     outline: none;
-    color: #FFBB05;
+    color: rgb(19, 154, 227);
     border-radius: 24px;
     transition: 0.25s;
     cursor: pointer;
@@ -183,7 +182,12 @@
 
 .reponse:hover
 {
-    background: yellow;
+    background: red;
     color: black;
         animation: rotateAnim 1s linear infinite;
+}
+
+.drapeau {
+  position: relative;
+  left: 650px;
 }
