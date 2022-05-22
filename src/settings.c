@@ -18,7 +18,6 @@ void process_settings(game_t *game)
     sfSprite_setScale(game->obj[11]->sprite, scale_torreto);
 
     while (sfRenderWindow_isOpen(game->window)) {
-        
         draw_object(game, 11);
         draw_object(game, 9);
         draw_object(game, 3);

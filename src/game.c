@@ -88,7 +88,7 @@ void process_game(game_t *game)
         draw_object(game, 11);
         draw_object(game, 12);
         draw_object(game, 13);
-;        quizz(game);
+        quizz(game);
         sfRenderWindow_display(game->window);
         sfRenderWindow_clear(game->window, sfBlack);
     }
