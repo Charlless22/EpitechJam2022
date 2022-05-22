@@ -17,7 +17,7 @@ void is_button_1(game_t *game)
                 game->note += 1;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
     if (x >= game->obj[11]->pose.x && x <= game->obj[11]->pose.x + 1920) {
@@ -25,7 +25,7 @@ void is_button_1(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
     if (x >= game->obj[13]->pose.x && x <= game->obj[13]->pose.x + 1920) {
@@ -33,7 +33,7 @@ void is_button_1(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
 }
@@ -48,7 +48,7 @@ void is_button_2(game_t *game)
                 game->note += 1;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
     if (x >= game->obj[11]->pose.x && x <= game->obj[11]->pose.x + 1920) {
@@ -56,7 +56,7 @@ void is_button_2(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
     if (x >= game->obj[12]->pose.x && x <= game->obj[12]->pose.x + 1920) {
@@ -64,7 +64,7 @@ void is_button_2(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
 }
@@ -79,7 +79,7 @@ void is_button_3(game_t *game)
                 game->note += 1;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
     if (x >= game->obj[11]->pose.x && x <= game->obj[11]->pose.x + 1920) {
@@ -87,7 +87,7 @@ void is_button_3(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
     if (x >= game->obj[12]->pose.x && x <= game->obj[12]->pose.x + 1920) {
@@ -95,7 +95,7 @@ void is_button_3(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
 }
@@ -110,7 +110,7 @@ void is_button_4(game_t *game)
                 game->note += 1;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
     if (x >= game->obj[12]->pose.x && x <= game->obj[12]->pose.x + 1920) {
@@ -118,7 +118,7 @@ void is_button_4(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
     if (x >= game->obj[13]->pose.x && x <= game->obj[13]->pose.x + 1920) {
@@ -126,7 +126,7 @@ void is_button_4(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
 }
@@ -141,7 +141,7 @@ void is_button_5(game_t *game)
                 game->note += 1;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
     if (x >= game->obj[12]->pose.x && x <= game->obj[12]->pose.x + 1920) {
@@ -149,7 +149,7 @@ void is_button_5(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
     if (x >= game->obj[13]->pose.x && x <= game->obj[13]->pose.x + 1920) {
@@ -157,7 +157,7 @@ void is_button_5(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(1);
+                printf("question = %d\n", game->question);
         }
     }
 }
