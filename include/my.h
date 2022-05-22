@@ -52,6 +52,7 @@ typedef struct game_s {
     int musique;
     int score;
     int note;
+    int check_music;
 } game_t;
 
 object_t *create_object(sfIntRect rect, char *path, int x, int y);
@@ -85,6 +86,7 @@ void tenth_question(game_t *game);
 void process_settings(game_t *game);
 void click_button_music(game_t *game);
 void button_musique(game_t *game);
+void leave_settings_button(game_t *game);
 void is_button_1(game_t *game);
 void is_button_2(game_t *game);
 void is_button_3(game_t *game);

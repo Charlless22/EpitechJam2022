@@ -10,6 +10,10 @@
 void process_menu(game_t *game)
 {
     init_game(game);
+    if (game->check_music == 1)
+        sfMusic_stop(game->music);
+    else if (game->check_music == 0)
+        sfMusic_stop(game->music2);
     while (sfRenderWindow_isOpen(game->window)) {
         draw_all_object(game, 3);
         bouton_play_crunch(game);

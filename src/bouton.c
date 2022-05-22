@@ -41,8 +41,10 @@ void click_button_music(game_t *game)
     if (sfMouse_isButtonPressed && game->musique == 0) {
         if (x >= game->obj[9]->pose.x && x <= game->obj[9]->pose.x + 92) {
             if (y >= game->obj[9]->pose.y && y <= game->obj[9]->pose.y + 90) {
-                sfMusic_stop(game->music);
+                sfMusic_stop(game->music2);
+                sfMusic_play(game->music);
                 game->musique = 1;
+                game->check_music = 0;
             }
         }
     }
@@ -51,7 +53,8 @@ void click_button_music(game_t *game)
             if (y >= game->obj[9]->pose.y && y <= game->obj[9]->pose.y + 90) {
                 sfMusic_stop(game->music);
                 sfMusic_play(game->music2);
-                game->musique = 2;
+                game->musique = 0;
+                game->check_music = 1;
             }
         }
     }
@@ -66,6 +69,20 @@ void button_musique(game_t *game)
         if (y >= game->obj[9]->pose.y && y <= game->obj[9]->pose.y + 90) {
             sfSprite_setPosition(game->obj[10]->sprite, game->obj[10]->pose);
             sfRenderWindow_drawSprite(game->window, game->obj[10]->sprite, NULL);
+        }
+    }
+}
+
+void leave_settings_button(game_t *game)
+{
+    int x = sfMouse_getPositionRenderWindow(game->window).x;
+    int y = sfMouse_getPositionRenderWindow(game->window).y;
+
+    if (sfMouse_isButtonPressed) {
+        if (x >= game->obj[3]->pose.x && x <= game->obj[3]->pose.x + 230) {
+            if (y >= game->obj[3]->pose.y && y <= game->obj[3]->pose.y + 230) {
+                process_menu(game);
+            }
         }
     }
 }

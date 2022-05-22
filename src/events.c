@@ -30,10 +30,8 @@ void settings_events(game_t *game)
 {
     if (game->event.type == sfEvtClosed)
         sfRenderWindow_close(game->window);
-    if (game->event.type == sfEvtKeyPressed
-    && game->event.key.code == sfKeyEscape)
+    if (game->event.type == sfEvtKeyPressed && game->event.key.code == sfKeyEscape)
         sfRenderWindow_close(game->window);
-    if (game->event.type == sfEvtMouseButtonPressed
-    && game->event.key.code == sfMouseLeft)
+    if (game->event.type == sfEvtMouseButtonPressed && game->event.key.code == sfMouseLeft)
         click_button_music(game);
 }
