@@ -1,0 +1,93 @@
+body {
+    color: black;
+    background-color:white;
+    background-image:url(assets/fond_menu.jpg);
+    background-size: contain;
+    background-attachment:fixed;
+    margin: 0;
+    background-attachment:fixed;
+}
+
+.apu
+{
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    border: 0;
+    background: cyan;
+    display: block;
+    margin: 100px 50px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    border: 5px solid yellow;
+    padding: 20px 46px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.apu:hover
+{
+    background: yellow;
+    color: black;
+}
+
+.lisa
+{
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    border: 0;
+    background: cyan;
+    display: block;
+    margin: 100px 50px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    border: 5px solid yellow;
+    padding: 20px 46px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.lisa:hover
+{
+    background: yellow;
+    color: black;
+}
+
+.marge
+{
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    border: 0;
+    background: cyan;
+    display: block;
+    margin: 100px 50px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    border: 5px solid yellow;
+    padding: 20px 46px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.marge:hover
+{
+    background: yellow;
+    color: black;
+}

@@ -1,0 +1,67 @@
+body {
+    color: black;
+    background-color:white;
+    background-image:url(assets/fond_menu.jpg);
+    background-size: contain;
+    background-attachment:fixed;
+    margin: 0;
+    background-attachment:fixed;
+}
+
+h1 {
+    position: absolute;
+    left: 150px;
+    top: 20px;
+    font-size: 400%;
+    font-weight: bold;
+    font-family: cursive;
+    color: yellow;
+}
+
+@keyframes rotateAnim {
+    from {transform: rotateY(0);}
+    to {transform: rotateY(360deg);}
+}
+
+.donut {
+    position: relative;
+    top: 235px;
+    left: 50px;
+    animation: rotateAnim 10s linear infinite;
+}
+
+.donut1 {
+    position: relative;
+    top: 235px;
+    left: 350px;
+    animation: rotateAnim 10s linear infinite;
+}
+
+.play
+{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    border: 0;
+    background: cyan;
+    display: block;
+    margin: 100px 50px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    border: 5px solid yellow;
+    padding: 20px 46px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.play:hover
+{
+    background: yellow;
+    color: black;
+        animation: rotateAnim 1s linear infinite;
+}

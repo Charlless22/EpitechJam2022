@@ -1,0 +1,17 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/arnauld/Bureau/Epitech/jams/EpitechJam2022'
+cc    -c -o src/bouton.o src/bouton.c
+cc    -c -o src/destroy.o src/destroy.c
+cc    -c -o src/draw.o src/draw.c
+cc    -c -o src/events.o src/events.c
+cc    -c -o src/game.o src/game.c
+cc    -c -o src/init.o src/init.c
+cc    -c -o src/is_button.o src/is_button.c
+cc    -c -o src/main.o src/main.c
+cc    -c -o src/music_system.o src/music_system.c
+cc    -c -o src/quizz.o src/quizz.c
+cc    -c -o src/settings.o src/settings.c
+cc    -c -o src/text.o src/text.c
+gcc -o 	jam_quizz src/bouton.o src/destroy.o src/draw.o src/events.o src/game.o src/init.o src/is_button.o src/main.o src/music_system.o src/quizz.o src/settings.o src/text.o -Wall -Wextra -g3 -lcsfml-system -lcsfml-window -lcsfml-graphics -lcsfml-audio
+make: Leaving directory '/home/arnauld/Bureau/Epitech/jams/EpitechJam2022'
+ 
