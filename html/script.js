@@ -107,8 +107,8 @@ var Question = function (questionObj) {
       let correctFeedback, incorrectFeedback;
       this.html = this.html || document.createElement("div");
   
-      correctFeedback = "Nice! You got it right.";
-      incorrectFeedback = "Oh! Not the correct answer.";
+      correctFeedback = "Bien jouer ! C'est la bonne reponse.";
+      incorrectFeedback = "Dommage c'etait pas le bonne réponse";
   
       if (this.selectedAnswer !== null) {
         if (this.selectedAnswer.value.isCorrect) {
@@ -161,7 +161,7 @@ var Question = function (questionObj) {
           isCorrect: false
         },
         {
-          text: "Joe",
+          text: "Maya",
           isCorrect: false
         }
       ]
@@ -174,11 +174,11 @@ var Question = function (questionObj) {
           isCorrect: true
         },
         {
-          text: "Kenny",
+          text: "Karim",
           isCorrect: false
         },
         {
-          text: "Jaoued",
+          text: "Bartouwen",
           isCorrect: false
         },
         {
@@ -195,7 +195,7 @@ var Question = function (questionObj) {
           isCorrect: false
         },
         {
-          text: 'Papacito',
+          text: 'Home',
           isCorrect: false
         },
         {
@@ -203,7 +203,7 @@ var Question = function (questionObj) {
           isCorrect: true
         },
         {
-          text: "Smiters",
+          text: "Robert",
           isCorrect: false
         }
       ]
@@ -216,15 +216,15 @@ var Question = function (questionObj) {
           isCorrect: true
         },
         {
-          text: "Nasdas",
+          text: "Mayi",
           isCorrect: false
         },
         {
-          text: "Fatima",
+          text: "Fata",
           isCorrect: false
         },
         {
-          text: "Ayoub",
+          text: "Farge",
           isCorrect: false
         }
       ]
@@ -237,15 +237,15 @@ var Question = function (questionObj) {
           isCorrect: true
         },
         {
-          text: "EricLeZ",
+          text: "Erice",
           isCorrect: false
         },
         {
-          text: "IshowSpeed",
+          text: "Speedy",
           isCorrect: false
         },
         {
-          text: "Voiture",
+          text: "Car",
           isCorrect: false
         }
       ]
@@ -258,15 +258,15 @@ var Question = function (questionObj) {
           isCorrect: true
         },
         {
-          text: "Naruto",
+          text: "Bartilomew",
           isCorrect: false
         },
         {
-          text: "John",
+          text: "Bartomolew",
           isCorrect: false
         },
         {
-          text: "Bartholomiaou",
+          text: "Bartholomo",
           isCorrect: false
         }
       ]
@@ -275,7 +275,7 @@ var Question = function (questionObj) {
       text: "Quel est le nom complet de Maggie ?",
       answers: [
         {
-          text: "Bartholomew",
+          text: "Margar Eve",
           isCorrect: false
         },
         {
@@ -283,11 +283,11 @@ var Question = function (questionObj) {
           isCorrect: true
         },
         {
-          text: "Pablo",
+          text: "Margerit Eve",
           isCorrect: false
         },
         {
-          text: "Zizou",
+          text: "Margaret Ama",
           isCorrect: false
         }
       ]
@@ -300,15 +300,15 @@ var Question = function (questionObj) {
           isCorrect: true
         },
         {
-          text: "Toulouse",
+          text: "Housemil",
           isCorrect: false
         },
         {
-          text: "Pedro",
+          text: "Halmouse",
           isCorrect: false
         },
         {
-          text: "Lisa",
+          text: "Mousemil",
           isCorrect: false
         }
       ]
@@ -317,15 +317,15 @@ var Question = function (questionObj) {
       text: "Ou travaille Homer ?",
       answers: [
         {
-          text: "Monoprix",
+          text: "Pas de job",
           isCorrect: false
         },
         {
-          text: "Pole emploie",
+          text: "Barbier",
           isCorrect: false
         },
         {
-          text: "Centrale nucleaire de springfield",
+          text: "Centrale nucleaire",
           isCorrect: true
         },
         {
@@ -342,17 +342,9 @@ var Question = function (questionObj) {
           isCorrect: false
         },
         {
-          text: "La place",
-          isCorrect: false
-        },
-        {
           text: "Oui",
           isCorrect: true
         },
-        {
-          text: "Peut etre",
-          isCorrect: false
-        }
       ]
     }
   ];
@@ -404,6 +396,5 @@ var Question = function (questionObj) {
       }, 100);
     }
   });
-  
+
   console.log(questions, questionsData);
-  
