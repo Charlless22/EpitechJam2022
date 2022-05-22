@@ -78,7 +78,7 @@ void leave_settings_button(game_t *game)
     int x = sfMouse_getPositionRenderWindow(game->window).x;
     int y = sfMouse_getPositionRenderWindow(game->window).y;
 
-    if (sfMouse_isButtonPressed) {
+    if (game->event.type == sfEvtMouseButtonPressed && game->event.key.code == sfMouseLeft) {
         if (x >= game->obj[3]->pose.x && x <= game->obj[3]->pose.x + 230) {
             if (y >= game->obj[3]->pose.y && y <= game->obj[3]->pose.y + 230) {
                 process_menu(game);

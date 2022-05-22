@@ -9,6 +9,12 @@
 
 void process_settings(game_t *game)
 {
+    sfVector2f scale_donut = {0.3, 0.3};
+
+    game->obj[3]->pose.x = 0;
+    game->obj[3]->pose.y = 860;
+    sfSprite_setScale(game->obj[3]->sprite, scale_donut);
+
     while (sfRenderWindow_isOpen(game->window)) {
         draw_object(game, 9);
         draw_object(game, 3);
