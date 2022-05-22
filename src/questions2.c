@@ -17,7 +17,7 @@ void is_button_6(game_t *game)
                 game->note += 1;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
     if (x >= game->obj[11]->pose.x && x <= game->obj[11]->pose.x + 256) {
@@ -25,7 +25,7 @@ void is_button_6(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
     if (x >= game->obj[12]->pose.x && x <= game->obj[12]->pose.x + 256) {
@@ -33,7 +33,7 @@ void is_button_6(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
 }
@@ -48,7 +48,7 @@ void is_button_7(game_t *game)
                 game->note += 1;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
     if (x >= game->obj[11]->pose.x && x <= game->obj[11]->pose.x + 256) {
@@ -56,7 +56,7 @@ void is_button_7(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
     if (x >= game->obj[12]->pose.x && x <= game->obj[12]->pose.x + 256) {
@@ -64,7 +64,7 @@ void is_button_7(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
 }
@@ -79,7 +79,7 @@ void is_button_8(game_t *game)
                 game->note += 1;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
     if (x >= game->obj[11]->pose.x && x <= game->obj[11]->pose.x + 256) {
@@ -87,7 +87,7 @@ void is_button_8(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
     if (x >= game->obj[12]->pose.x && x <= game->obj[12]->pose.x + 256) {
@@ -95,7 +95,7 @@ void is_button_8(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
 }
@@ -110,7 +110,7 @@ void is_button_9(game_t *game)
                 game->note += 1;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
     if (x >= game->obj[11]->pose.x && x <= game->obj[11]->pose.x + 256) {
@@ -126,7 +126,7 @@ void is_button_9(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
 }
@@ -141,7 +141,7 @@ void is_button_10(game_t *game)
                 game->note += 1;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
     if (x >= game->obj[11]->pose.x && x <= game->obj[11]->pose.x + 256) {
@@ -149,7 +149,7 @@ void is_button_10(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
     if (x >= game->obj[12]->pose.x && x <= game->obj[12]->pose.x + 256) {
@@ -157,7 +157,7 @@ void is_button_10(game_t *game)
                 game->note += 0;
                 game->question -= 1;
                 printf("note = %d\n", game->note);
-                sleep(2);
+                sleep(1);
         }
     }
 }
