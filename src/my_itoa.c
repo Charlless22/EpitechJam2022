@@ -5,6 +5,8 @@
 ** my_itoa.c
 */
 
+#include "../include/my.h"
+
 char *my_itoa(int nb)
 {
     int len;
