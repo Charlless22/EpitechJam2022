@@ -8,10 +8,11 @@ body {
     background-attachment:fixed;
 }
 
+
 .music {
     position: absolute;
-    left: 0px;
-    top: 880px;
+    left: 5px;
+    top: 5px;
 }
 
 h1 {

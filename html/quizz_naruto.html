@@ -1,31 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-  <!--  Meta  -->
-  <meta charset="UTF-8" />
-  <title>EPITECH JAM QUIZ 2022</title>
-
-  <!--  Styles  -->
-  <link rel="stylesheet" href="script_naruto.css">
-  <link rel="stylesheet" href="styles/style.css">
-</head>
-
-<body>
-  <div id="app-container">
-    <div id="score-container">Score: 0</div>
-    <div id="homer">
-      <img class="naruto" src="assets/naruto.png">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>EPITECH JAM QUIZ 2022</title>
+    <link rel="stylesheet" href="script_naruto.css">
+  </head>
+  <body>
+    <audio class="music" controls><source src="assets/naruto-openings-1-9-hd.mp3" type="audio/mp3"></audio>
+    <div id="app-container">
+      <div id="score-container">Score: 0</div>
+      <div id="homer">
+        <img class="naruto" src="assets/naruto.png">
+      </div>
+      <div id="questions-container"></div>
     </div>
-    <div id="questions-container"></div>
-
-  </div>
-
-  <!-- Scripts -->
-  <script src="script_naruto.js"></script>
-  <script src="scripts/index.js"></script>
-  <a href="reponse.html" class="reponse">Réponse</a>
-</body>
-
+    <script src="script_naruto.js"></script>
+    <script src="scripts/index.js"></script>
+    <a href="reponse.html" class="reponse">Réponse</a>
+  </body>
 </html>

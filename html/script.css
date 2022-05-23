@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 .question {
   --correct-color: rgb(9, 187, 69);
   --incorrect-color: rgb(245, 48, 48);
@@ -112,18 +113,16 @@
 }
 
 /*
-  style.css
+style.css
 */
 
-#app-container {
+body {
+    background: yellow;
+}
+
+.music {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 40px 20px;
-  padding-bottom: 4000px;
-  background: yellow;
+  left: 750px;
 }
 
 #questions-container {
@@ -161,31 +160,31 @@
 
 .reponse
 {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    border: 0;
-    background: yellow;
-    display: block;
-    margin: 100px 50px;
-    text-align: center;
-    font-size: x-large;
-    font-weight: bold;
-    border: 5px solid yellow;
-    padding: 20px 46px;
-    width: 200px;
-    outline: none;
-    color: yellow;
-    border-radius: 24px;
-    transition: 0.25s;
-    cursor: pointer;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 0;
+  background: yellow;
+  display: block;
+  margin: 100px 50px;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  border: 5px solid yellow;
+  padding: 20px 46px;
+  width: 200px;
+  outline: none;
+  color: yellow;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
 }
 
 .reponse:hover
 {
-    background: yellow;
-    color: black;
-        animation: rotateAnim 1s linear infinite;
+  background: yellow;
+  color: black;
+  animation: rotateAnim 1s linear infinite;
 }
 
 .homer {
