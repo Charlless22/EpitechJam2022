@@ -124,6 +124,12 @@ body {
   left: 750px;
 }
 
+#app-container {
+  position: relative;
+  top: 50px;
+}
+
+
 #questions-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
